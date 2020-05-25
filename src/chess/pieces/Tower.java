@@ -4,15 +4,15 @@ import boardgame.Board;
 import chess.ChessPiece;
 import chess.Color;
 
-public class King extends ChessPiece {
+public class Tower extends ChessPiece {
 
-    public King(Board board, Color color) {
+    public Tower(Board board, Color color) {
         super(board, color);
     }
 
     @Override
     public String toString() {
-        return "K";
+        return "T";
     }
 
     @Override
