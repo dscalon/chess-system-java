@@ -22,7 +22,7 @@ public class Tower extends ChessPiece {
 
         Position p = new Position(0, 0);
 
-        // above
+        // Acima
         p.setValues(position.getRow() - 1, position.getColumn());
         while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
             mat[p.getRow()][p.getColumn()] = true;
@@ -32,7 +32,7 @@ public class Tower extends ChessPiece {
             mat[p.getRow()][p.getColumn()] = true;
         }
 
-        // left
+        // Esquerda
         p.setValues(position.getRow(), position.getColumn() - 1);
         while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
             mat[p.getRow()][p.getColumn()] = true;
@@ -42,7 +42,7 @@ public class Tower extends ChessPiece {
             mat[p.getRow()][p.getColumn()] = true;
         }
 
-        // right
+        // Direita
         p.setValues(position.getRow(), position.getColumn() + 1);
         while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
             mat[p.getRow()][p.getColumn()] = true;
@@ -52,7 +52,7 @@ public class Tower extends ChessPiece {
             mat[p.getRow()][p.getColumn()] = true;
         }
 
-        // below
+        // Abaixo
         p.setValues(position.getRow() + 1, position.getColumn());
         while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
             mat[p.getRow()][p.getColumn()] = true;
